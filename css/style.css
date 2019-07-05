@@ -300,7 +300,7 @@ h1 {
     padding-top: 6px;
 }
 
-.subscribe-form {
+.btn-subscribe-form {
     width: 487px;
     display: flex;
     justify-content: space-between;
@@ -310,18 +310,18 @@ h1 {
     padding: 10px 10px 10px 40px;
 }
 
-.subscribe-form input {
+.btn-subscribe-form input {
     background: transparent;
     border: none;
     min-width: 300px;
     color: #fff;
 }
 
-.subscribe-form input:focus, .btn-subscribe:focus {
+.btn-subscribe-form input:focus, .btn-subscribe:focus {
     outline: none;
 }
 
-.subscribe-form input::placeholder {
+.btn-subscribe-form input::placeholder {
     color: #fff;
 }
 
@@ -361,7 +361,7 @@ h1 {
     line-height: 1.8;
 }
 
-.page-software .title-h2, .page-analytics .title-h2, .page-control .title-h2{
+.page-software .title-h2, .page-analytics .title-h2, .page-control .title-h2 {
     max-width: 766px;
     margin-top: 12px;
     margin-bottom: 26px;
@@ -686,13 +686,17 @@ ul.nav {
     color: #1a88e1;
     font-size: 14px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900;
+    margin-bottom: 0;
+    letter-spacing: 2.1px;
 }
 
 .box-team .name {
     font-size: 26px;
-    font-weight: bold;
+    font-weight: 600;
     color: #192b59;
+    margin-top: 8px;
+    letter-spacing: -0.9px;
 }
 
 .page-form h2 {
@@ -909,10 +913,10 @@ p.page-control-text {
     border-radius: 10px;
     flex-basis: 31.5%;
     box-sizing: border-box;
-    box-shadow: 0 9px 20px #f4f4f4;
+    box-shadow: 0 5px 6px #f4f4f4;
 }
 
-.box-clients-item > p{
+.box-clients-item > p {
     margin-bottom: 4px;
 }
 
@@ -931,6 +935,149 @@ p.page-control-text {
     margin-top: 20px;
 }
 
+.page-team {
+    text-align: center;
+    background-image: url("../img/main-bg7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 82px 0 20px 0;
+}
+
+.box-team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+
+}
+
+.box-team-item {
+    background-color: #fff;
+    flex-basis: 31.5%;
+    box-shadow: 0 5px 6px #f4f4f4;
+    position: relative;
+    padding: 193px 31px 42px 31px;
+    box-sizing: border-box;
+}
+
+.box-team-item .avatar {
+    position: absolute;
+    top: -86px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.box-team-item .btn-team span{
+    background-image: url("../img/btn-team.png");
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.box-team-item .btn-more span{
+    background-position: -4px -4px;
+    width: 20px;
+    height: 21px;
+}
+
+.box-team-item .btn-fb span{
+    background-position: -27px -4px;
+    width: 14px;
+    height: 21px;
+}
+
+.box-team-item .btn-tw span{
+    background-position: -45px -4px;
+    width: 15px;
+    height: 21px;
+}
+
+.box-team-item .btn-be span{
+    background-position: -65px -4px;
+    width: 17px;
+    height: 21px;
+}
+
+.box-team-item .btn-web span{
+    background-position: -85px -4px;
+    width: 16px;
+    height: 21px;
+}
+
+
+.box-team-item .btn-fb:hover span{
+    background-position: -27px -27px;
+}
+
+
+.box-team-item .btn-tw:hover span{
+    background-position: -45px -27px;
+}
+
+
+.box-team-item .btn-be:hover span{
+    background-position: -65px -27px;
+}
+
+
+.box-team-item .btn-web:hover span{
+    background-position: -85px -27px;
+}
+
+.box-team-item .btn-team {
+    background-color: #f3f3f3;
+    border-radius: 50%;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transition: 0.3s;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.box-team-item .btn-team:hover {
+    background-color: #1a88e1;
+}
+
+.box-team-item .btn-more:hover span{
+    background-position: -4px -27px;
+}
+
+.social-team {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.object-circle {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -363px;
+    width: 413px;
+    height: 758px;
+    background-image: url("../img/circle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.object-square {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -198px;
+    width: 569px;
+    height: 661px;
+    background-image: url("../img/square.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 /*PAGE*/
 
@@ -946,6 +1093,7 @@ p.page-control-text {
 .page-stat {
     background-color: #edf6ff;
     padding: 116px 0 96px 0;
+    position: relative;
 }
 
 .page-plan, .page-screen {
@@ -954,6 +1102,7 @@ p.page-control-text {
 
 .page-plan {
     margin-top: 110px;
+    padding: 0px 0 121px 0;
 }
 
 .page-screen {
